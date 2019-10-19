@@ -16,7 +16,7 @@ function [PS1,PS2,C,M]=apply_pca(X1,X2) % 04/02
   %     nofpc=100 by default can be reasonably changed to improve 
   %     the recognition accuracy
   %
-  nofpc=200;
+  nofpc=100;
   % train set:
   [P1,C]=processpca(X1);   
   [PM1,M]=mapstd(P1);      
