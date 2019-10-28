@@ -5,7 +5,7 @@ function D1=call_fold_data() % ver 03/19
   % and a given PCA cutoff (thresh) [see MATLAB PCA]
   % Output D1 contains the results
   % 
-  nf = 3; % nof cross-validation folds 
+  nf = 5; % nof cross-validation folds 
   thresh = 1e-5; % a given PCA cutoff 
   load im.mat data target noc;
   [X,n] = call_norm_brightness(data); 
