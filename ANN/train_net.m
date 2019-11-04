@@ -16,7 +16,7 @@ function Net=train_net(X1,X2,T1,T2) % 04/02
   %
   nofhn=20; 
   Net=feedforwardnet(nofhn,'trainscg');
-  Net.trainParam.epochs = 10000;
+  Net.trainParam.epochs = 1000;
   TV1=full(ind2vec(T1));
   Net=train(Net,X1,TV1); % ?? overfitting on validation ?
   YV2=Net(X2);
